@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-l6o5=4rv(_n8@5^ne05a2(xhu547y0ggske77!1@4os+293xxg')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'True') == 'True'
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = ['*']
 
@@ -48,6 +48,19 @@ ROOT_URLCONF = 'core.urls'
 
 # السماح للفرونت إند بالاتصال من أي مكان
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
 
 TEMPLATES = [
     {
@@ -68,13 +81,13 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 
 # Database Setup
-# الداتا بيز المحلية بتاعتك هي الافتراضية
 LOCAL_DB_URL = 'postgresql://postgres:123@127.0.0.1:5432/watches_db'
 
 DATABASES = {
     'default': dj_database_url.config(
         default=os.environ.get('DATABASE_URL', LOCAL_DB_URL),
-        conn_max_age=600
+        conn_max_age=600,
+        ssl_require=bool(os.environ.get('DATABASE_URL'))  # تفعيل SSL لقواعد بيانات Neon السحابية
     )
 }
 

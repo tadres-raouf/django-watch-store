@@ -1,0 +1,1844 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$0DhUe1Q1gronkRHamtPtt0$HdN1DzxZ5GHT5751WYk7DqMv6xlCwcyP+tEhTHYGRf0=",
+        "last_login": "2026-07-04T01:57:36.802",
+        "is_superuser": true,
+        "username": "watches_admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "tadresraouf5@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-06-04T23:06:31.487",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1hjc6sv7bg8ir6j4byz3u2obkxzxdoia",
+    "fields": {
+        "session_data": ".eJxVjLsOAiEQAP-F2pBj4XY9S3u_gSwsyKmB5B6V8d8NyRXazkzmrTzvW_H7mhY_i7ooo06_LHB8ptqFPLjem46tbsscdE_0YVd9a5Je16P9GxReS9-CUHZnO6BltATAgAOFYYRoiNGFEKNNkICMoJMJJY_kbDYuJpyI1ecLuvU3OA:1wfmpE:nj20lKFU6tBWuxbLPJqsxW49gaocQ75Xnoa8fdUX21A",
+        "expire_date": "2026-07-18T01:57:36.823"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ogwvkmwo2y8b6vhj3j4eiv76twxwvt6d",
+    "fields": {
+        "session_data": ".eJxVjLsOAiEQAP-F2pBj4XY9S3u_gSwsyKmB5B6V8d8NyRXazkzmrTzvW_H7mhY_i7ooo06_LHB8ptqFPLjem46tbsscdE_0YVd9a5Je16P9GxReS9-CUHZnO6BltATAgAOFYYRoiNGFEKNNkICMoJMJJY_kbDYuJpyI1ecLuvU3OA:1wVFDU:Pl7pwCK4JazdAJToxKl3bb_fsQ4VPv-czPA8jsjtRZ0",
+        "expire_date": "2026-06-19T00:03:04.061"
+    }
+},
+{
+    "model": "product.category",
+    "pk": 1,
+    "fields": {
+        "name": "ساعات رجالي",
+        "slug": "ساعات-رجالي"
+    }
+},
+{
+    "model": "product.category",
+    "pk": 2,
+    "fields": {
+        "name": "ساعات حريمي",
+        "slug": "ساعات-حريمي"
+    }
+},
+{
+    "model": "product.color",
+    "pk": 2,
+    "fields": {
+        "name": "اسود",
+        "hex_code": "#000000"
+    }
+},
+{
+    "model": "product.color",
+    "pk": 3,
+    "fields": {
+        "name": "سيلفر",
+        "hex_code": "#C0C0C0"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 2,
+    "fields": {
+        "category": 1,
+        "title": "ساعة روليكس داي ديت",
+        "slug": "ساعات-روليكس",
+        "description": "ساعة عصرية حديثة",
+        "price": "600.00",
+        "discount_percentage": 20,
+        "is_bestseller": false,
+        "is_active": true,
+        "created_at": "2026-06-05T00:49:54.484",
+        "offer_discount_percentage": 0,
+        "offer_start_date": null,
+        "offer_end_date": null
+    }
+},
+{
+    "model": "product.product",
+    "pk": 3,
+    "fields": {
+        "category": 2,
+        "title": "casio",
+        "slug": "كاسيو",
+        "description": "ساعة عصرية جميلة",
+        "price": "350.00",
+        "discount_percentage": 0,
+        "is_bestseller": true,
+        "is_active": true,
+        "created_at": "2026-06-09T21:05:02.321",
+        "offer_discount_percentage": 0,
+        "offer_start_date": null,
+        "offer_end_date": null
+    }
+},
+{
+    "model": "product.product",
+    "pk": 4,
+    "fields": {
+        "category": 2,
+        "title": "روليكس",
+        "slug": "روليكس",
+        "description": "ساعة عصرية",
+        "price": "800.00",
+        "discount_percentage": 10,
+        "is_bestseller": false,
+        "is_active": true,
+        "created_at": "2026-06-09T21:07:08.321",
+        "offer_discount_percentage": 20,
+        "offer_start_date": "2026-06-10T14:30:00",
+        "offer_end_date": "2026-06-10T15:52:00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 5,
+    "fields": {
+        "category": 1,
+        "title": "روليكس",
+        "slug": "روليكسس",
+        "description": "عاععاعاعاعخلا",
+        "price": "650.00",
+        "discount_percentage": 0,
+        "is_bestseller": false,
+        "is_active": true,
+        "created_at": "2026-06-09T21:08:31.009",
+        "offer_discount_percentage": 0,
+        "offer_start_date": null,
+        "offer_end_date": null
+    }
+},
+{
+    "model": "product.product",
+    "pk": 6,
+    "fields": {
+        "category": 1,
+        "title": "روليكس",
+        "slug": "روليكسسس",
+        "description": "تلاتلاالا",
+        "price": "250.00",
+        "discount_percentage": 0,
+        "is_bestseller": false,
+        "is_active": true,
+        "created_at": "2026-06-09T21:09:15.021",
+        "offer_discount_percentage": 0,
+        "offer_start_date": null,
+        "offer_end_date": null
+    }
+},
+{
+    "model": "product.productvariant",
+    "pk": 3,
+    "fields": {
+        "product": 2,
+        "color": 2,
+        "is_default": true,
+        "is_active": true
+    }
+},
+{
+    "model": "product.productvariant",
+    "pk": 4,
+    "fields": {
+        "product": 2,
+        "color": 3,
+        "is_default": false,
+        "is_active": true
+    }
+},
+{
+    "model": "product.productvariant",
+    "pk": 5,
+    "fields": {
+        "product": 3,
+        "color": 2,
+        "is_default": false,
+        "is_active": true
+    }
+},
+{
+    "model": "product.productvariant",
+    "pk": 6,
+    "fields": {
+        "product": 4,
+        "color": 3,
+        "is_default": true,
+        "is_active": true
+    }
+},
+{
+    "model": "product.productvariant",
+    "pk": 7,
+    "fields": {
+        "product": 5,
+        "color": 2,
+        "is_default": true,
+        "is_active": true
+    }
+},
+{
+    "model": "product.productvariant",
+    "pk": 8,
+    "fields": {
+        "product": 6,
+        "color": 3,
+        "is_default": true,
+        "is_active": true
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 1,
+    "fields": {
+        "variant": 3,
+        "image": "watches/WhatsApp_Image_2026-06-05_at_12.46.48_AM.jpeg",
+        "is_main": true
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 2,
+    "fields": {
+        "variant": 3,
+        "image": "watches/WhatsApp_Image_2026-06-04_at_10.01.26_PM.jpeg",
+        "is_main": false
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 3,
+    "fields": {
+        "variant": 3,
+        "image": "watches/WhatsApp_Image_2026-06-05_at_12.46.49_AM.jpeg",
+        "is_main": false
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 4,
+    "fields": {
+        "variant": 4,
+        "image": "watches/WhatsApp_Image_2026-06-05_at_12_Fj8YS42.46.48_AM.jpeg",
+        "is_main": true
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 5,
+    "fields": {
+        "variant": 4,
+        "image": "watches/WhatsApp_Image_2026-06-04_at_10_OIGynrF.01.26_PM.jpeg",
+        "is_main": false
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 6,
+    "fields": {
+        "variant": 5,
+        "image": "watches/WhatsApp_Image_2026-06-04_at_10_e786YMA.01.26_PM.jpeg",
+        "is_main": true
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 7,
+    "fields": {
+        "variant": 5,
+        "image": "watches/WhatsApp_Image_2026-06-05_at_12_lqwdeQ7.46.49_AM.jpeg",
+        "is_main": false
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 8,
+    "fields": {
+        "variant": 6,
+        "image": "watches/WhatsApp_Image_2026-06-05_at_12_VGUBsnC.46.49_AM.jpeg",
+        "is_main": true
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 9,
+    "fields": {
+        "variant": 6,
+        "image": "watches/WhatsApp_Image_2026-06-05_at_12_0DLHpSN.46.48_AM.jpeg",
+        "is_main": false
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 10,
+    "fields": {
+        "variant": 8,
+        "image": "watches/WhatsApp_Image_2026-06-04_at_10_3xyvZQh.01.26_PM.jpeg",
+        "is_main": true
+    }
+},
+{
+    "model": "product.variantimage",
+    "pk": 11,
+    "fields": {
+        "variant": 7,
+        "image": "watches/WhatsApp_Image_2026-06-05_at_12_JrJgpIp.46.48_AM.jpeg",
+        "is_main": true
+    }
+},
+{
+    "model": "product.governorate",
+    "pk": 1,
+    "fields": {
+        "name": "اسيوط",
+        "shipping_cost": "100.00"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 1,
+    "fields": {
+        "customer_name": "تادرس رؤوف",
+        "phone_number": "01151696790",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "الحمام ابنوب اسيبوط",
+        "total_products_price": "960.00",
+        "final_total_price": "1060.00",
+        "status": "Completed",
+        "created_at": "2026-06-08T01:39:47.411"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 2,
+    "fields": {
+        "customer_name": "تادرس",
+        "phone_number": "01151696790",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "ابنوب",
+        "total_products_price": "480.00",
+        "final_total_price": "580.00",
+        "status": "Completed",
+        "created_at": "2026-06-08T03:28:01.228"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 3,
+    "fields": {
+        "customer_name": "تادرس رؤ",
+        "phone_number": "01152696791",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "اسيوط الحمام",
+        "total_products_price": "480.00",
+        "final_total_price": "580.00",
+        "status": "Pending",
+        "created_at": "2026-06-08T03:40:37.262"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 4,
+    "fields": {
+        "customer_name": "تادرس",
+        "phone_number": "01151696790",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "الحمام",
+        "total_products_price": "480.00",
+        "final_total_price": "580.00",
+        "status": "Completed",
+        "created_at": "2026-06-08T03:45:35.975"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 5,
+    "fields": {
+        "customer_name": "تادرس",
+        "phone_number": "01953539",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "الحمام",
+        "total_products_price": "960.00",
+        "final_total_price": "1060.00",
+        "status": "Cancelled",
+        "created_at": "2026-06-08T04:14:34.212"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 6,
+    "fields": {
+        "customer_name": "تادرس",
+        "phone_number": "011515",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "اسيوط",
+        "total_products_price": "960.00",
+        "final_total_price": "1060.00",
+        "status": "Completed",
+        "created_at": "2026-06-08T04:21:17.308"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 7,
+    "fields": {
+        "customer_name": "رؤوف",
+        "phone_number": "012566",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "ابنوب",
+        "total_products_price": "480.00",
+        "final_total_price": "580.00",
+        "status": "Pending",
+        "created_at": "2026-06-08T23:52:45.892"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 8,
+    "fields": {
+        "customer_name": "ابانوب",
+        "phone_number": "01658",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "نيىبنى",
+        "total_products_price": "480.00",
+        "final_total_price": "580.00",
+        "status": "Pending",
+        "created_at": "2026-06-08T23:54:11.649"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 9,
+    "fields": {
+        "customer_name": "تادرس",
+        "phone_number": "01151696790",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "ابنوب اسيوط الحمام",
+        "total_products_price": "480.00",
+        "final_total_price": "580.00",
+        "status": "Completed",
+        "created_at": "2026-06-09T00:13:09.151"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 10,
+    "fields": {
+        "customer_name": "تادرس رؤوف",
+        "phone_number": "01151696790",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "ابنوب الحمام اسيوط",
+        "total_products_price": "480.00",
+        "final_total_price": "580.00",
+        "status": "Completed",
+        "created_at": "2026-06-09T00:14:46.371"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 11,
+    "fields": {
+        "customer_name": "اسحاق",
+        "phone_number": "01229441503",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "ابنوب الحمام شرق البلد",
+        "total_products_price": "480.00",
+        "final_total_price": "580.00",
+        "status": "Completed",
+        "created_at": "2026-06-09T01:45:22.484"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 12,
+    "fields": {
+        "customer_name": "تادرس1",
+        "phone_number": "01151696790",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "برربربيريرييؤيرببربربق",
+        "total_products_price": "720.00",
+        "final_total_price": "820.00",
+        "status": "Completed",
+        "created_at": "2026-06-10T14:37:03.674"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 13,
+    "fields": {
+        "customer_name": "تادرس2",
+        "phone_number": "01151696790",
+        "alternate_phone_number": "",
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "بيةنةنبة لنبلى لبنةىةبىةة",
+        "total_products_price": "640.00",
+        "final_total_price": "740.00",
+        "status": "Completed",
+        "created_at": "2026-06-10T14:47:04.795"
+    }
+},
+{
+    "model": "product.order",
+    "pk": 14,
+    "fields": {
+        "customer_name": "تادرس",
+        "phone_number": "01151696790",
+        "alternate_phone_number": null,
+        "governorate": 1,
+        "shipping_price_at_order": "100.00",
+        "address_details": "يةهبقب بىقىبق قتق تق بتق ق ؤ ت ي",
+        "total_products_price": "640.00",
+        "final_total_price": "740.00",
+        "status": "Completed",
+        "created_at": "2026-06-10T14:51:35.827"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 1,
+    "fields": {
+        "order": 1,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "سيلفر",
+        "quantity": 2,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 2,
+    "fields": {
+        "order": 2,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 3,
+    "fields": {
+        "order": 3,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 4,
+    "fields": {
+        "order": 4,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 5,
+    "fields": {
+        "order": 5,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 2,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 6,
+    "fields": {
+        "order": 6,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 7,
+    "fields": {
+        "order": 6,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "سيلفر",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 8,
+    "fields": {
+        "order": 7,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 9,
+    "fields": {
+        "order": 8,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 10,
+    "fields": {
+        "order": 9,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 11,
+    "fields": {
+        "order": 10,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 12,
+    "fields": {
+        "order": 11,
+        "product": 2,
+        "product_title": "ساعة روليكس داي ديت",
+        "color_name": "اسود",
+        "quantity": 1,
+        "price_per_unit": "480.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 13,
+    "fields": {
+        "order": 12,
+        "product": 4,
+        "product_title": "روليكس",
+        "color_name": "سيلفر",
+        "quantity": 1,
+        "price_per_unit": "720.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 14,
+    "fields": {
+        "order": 13,
+        "product": 4,
+        "product_title": "روليكس",
+        "color_name": "سيلفر",
+        "quantity": 1,
+        "price_per_unit": "640.00"
+    }
+},
+{
+    "model": "product.orderitem",
+    "pk": 15,
+    "fields": {
+        "order": 14,
+        "product": 4,
+        "product_title": "روليكس",
+        "color_name": "سيلفر",
+        "quantity": 1,
+        "price_per_unit": "640.00"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-06-04T23:20:26.362",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "ساعات رجالي",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-06-04T23:20:44.110",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "ساعات حريمي",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-06-05T00:04:44.165",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "color"
+        ],
+        "object_id": "1",
+        "object_repr": "اسود",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-06-05T00:06:05.054",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "color"
+        ],
+        "object_id": "1",
+        "object_repr": "اسود",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-06-05T00:06:21.468",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "color"
+        ],
+        "object_id": "2",
+        "object_repr": "اسود",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-06-05T00:22:05.454",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "ساعات رجالي",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-06-05T00:22:18.326",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "ساعات حريمي",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-06-05T00:31:51.476",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "color"
+        ],
+        "object_id": "3",
+        "object_repr": "سيلفر",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-06-05T00:32:08.704",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "rolex",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c (Variant)\", \"object\": \"rolex - \\u0627\\u0633\\u0648\\u062f\"}}, {\"added\": {\"name\": \"\\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c (Variant)\", \"object\": \"rolex - \\u0633\\u064a\\u0644\\u0641\\u0631\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-06-05T00:44:22.987",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "rolex",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-06-05T00:49:54.526",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "rolex",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c (Variant)\", \"object\": \"rolex - \\u0627\\u0633\\u0648\\u062f\"}}, {\"added\": {\"name\": \"\\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c (Variant)\", \"object\": \"rolex - \\u0633\\u064a\\u0644\\u0641\\u0631\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (1)\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (2)\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (3)\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (4)\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (5)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-06-05T19:09:15.728",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "ساعة روليكس داي ديت",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0627\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0627\\u0639\\u0629\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-06-05T19:10:02.431",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "ساعة روليكس داي ديت",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0627\\u0644\\u0648\\u0635\\u0641\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-06-05T19:10:51.041",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "ساعة روليكس داي ديت الحياة بقا لونها بمبي وانت جنبك وانا جنبي",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0627\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0627\\u0639\\u0629\", \"\\u0627\\u0644\\u0648\\u0635\\u0641\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-06-05T19:12:00.083",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "ساعة روليكس داي ديت",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0627\\u0633\\u0645 \\u0627\\u0644\\u0633\\u0627\\u0639\\u0629\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-06-06T20:19:04.100",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "ساعة روليكس داي ديت",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0646\\u0634\\u0637 / \\u0645\\u062a\\u0627\\u062d\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-06-06T20:19:15.673",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "ساعة روليكس داي ديت",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0646\\u0634\\u0637 / \\u0645\\u062a\\u0627\\u062d\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-06-07T19:04:25.834",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "governorate"
+        ],
+        "object_id": "1",
+        "object_repr": "اسيوط (100 ج.م)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-06-08T01:43:58.611",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-06-08T02:22:05.346",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-06-08T02:25:28.743",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2026-06-08T02:28:21.695",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2026-06-08T02:29:55.734",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2026-06-08T02:32:17.982",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2026-06-08T02:37:00.411",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2026-06-08T02:37:13.460",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2026-06-08T02:40:11.587",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2026-06-08T02:40:34.350",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2026-06-08T02:53:37.571",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2026-06-08T02:53:48.763",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2026-06-08T02:57:45.797",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2026-06-08T02:57:56.063",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2026-06-08T03:00:05.631",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2026-06-08T03:00:17.296",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2026-06-08T03:09:43.455",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2026-06-08T03:15:52.023",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2026-06-08T03:21:22.913",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "1",
+        "object_repr": "اوردر #1 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2026-06-08T03:29:14.834",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "2",
+        "object_repr": "اوردر #2 - تادرس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2026-06-08T03:34:44.225",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "2",
+        "object_repr": "اوردر #2 - تادرس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2026-06-08T03:35:58.898",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "2",
+        "object_repr": "اوردر #2 - تادرس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2026-06-08T03:53:17.437",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "4",
+        "object_repr": "اوردر #4 - تادرس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2026-06-08T04:17:36.121",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "5",
+        "object_repr": "اوردر #5 - تادرس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2026-06-08T04:22:29.167",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "6",
+        "object_repr": "اوردر #6 - تادرس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2026-06-09T00:13:35.713",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "9",
+        "object_repr": "اوردر #9 - تادرس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2026-06-09T00:15:40.297",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "10",
+        "object_repr": "اوردر #10 - تادرس رؤوف",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2026-06-09T01:46:33.826",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "11",
+        "object_repr": "اوردر #11 - اسحاق",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2026-06-09T21:05:02.369",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "casio",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c (Variant)\", \"object\": \"casio - \\u0627\\u0633\\u0648\\u062f\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (6)\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (7)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2026-06-09T21:07:08.338",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "روليكس",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c (Variant)\", \"object\": \"\\u0631\\u0648\\u0644\\u064a\\u0643\\u0633 - \\u0633\\u064a\\u0644\\u0641\\u0631\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (8)\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (9)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2026-06-09T21:08:31.010",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "5",
+        "object_repr": "روليكس",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c (Variant)\", \"object\": \"\\u0631\\u0648\\u0644\\u064a\\u0643\\u0633 - \\u0627\\u0633\\u0648\\u062f\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2026-06-09T21:09:15.038",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "6",
+        "object_repr": "روليكس",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c (Variant)\", \"object\": \"\\u0631\\u0648\\u0644\\u064a\\u0643\\u0633 - \\u0633\\u064a\\u0644\\u0641\\u0631\"}}, {\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (10)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2026-06-09T21:09:45.517",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "روليكس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"name\": \"\\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0645\\u0646\\u062a\\u062c (Variant)\", \"object\": \"\\u0631\\u0648\\u0644\\u064a\\u0643\\u0633 - \\u0633\\u064a\\u0644\\u0641\\u0631\", \"fields\": [\"\\u0627\\u0644\\u0644\\u0648\\u0646 \\u0627\\u0644\\u0627\\u0641\\u062a\\u0631\\u0627\\u0636\\u064a \\u0644\\u0644\\u0633\\u0627\\u0639\\u0629\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2026-06-09T21:10:42.343",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "5",
+        "object_repr": "روليكس",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"\\u0635\\u0648\\u0631\\u0629 \\u0627\\u0644\\u0645\\u0648\\u062f\\u064a\\u0644\", \"object\": \"VariantImage object (11)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2026-06-10T04:08:43.416",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "روليكس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0628\\u062f\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\", \"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0627\\u0646\\u062a\\u0647\\u0627\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2026-06-10T04:11:00.040",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "روليكس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0646\\u0633\\u0628\\u0629 \\u062e\\u0635\\u0645 \\u0627\\u0644\\u0639\\u0631\\u0636 \\u0627\\u0644\\u0645\\u062d\\u062f\\u0648\\u062f (%)\", \"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0628\\u062f\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\", \"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0627\\u0646\\u062a\\u0647\\u0627\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2026-06-10T14:35:22.020",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "روليكس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0628\\u062f\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\", \"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0627\\u0646\\u062a\\u0647\\u0627\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2026-06-10T14:38:36.776",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "12",
+        "object_repr": "اوردر #12 - تادرس1",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2026-06-10T14:41:49.486",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "روليكس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0627\\u0646\\u062a\\u0647\\u0627\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2026-06-10T14:46:09.235",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "روليكس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0627\\u0646\\u062a\\u0647\\u0627\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2026-06-10T14:48:28.417",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "13",
+        "object_repr": "اوردر #13 - تادرس2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2026-06-10T14:50:50.082",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "روليكس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0627\\u0646\\u062a\\u0647\\u0627\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2026-06-10T14:52:28.269",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "order"
+        ],
+        "object_id": "14",
+        "object_repr": "اوردر #14 - تادرس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0628\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2026-06-10T14:54:38.085",
+        "user": [
+            "watches_admin"
+        ],
+        "content_type": [
+            "product",
+            "product"
+        ],
+        "object_id": "4",
+        "object_repr": "روليكس",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u062a\\u0627\\u0631\\u064a\\u062e \\u0648\\u0648\\u0642\\u062a \\u0627\\u0646\\u062a\\u0647\\u0627\\u0621 \\u0627\\u0644\\u0639\\u0631\\u0636\"]}}]"
+    }
+}
+]
