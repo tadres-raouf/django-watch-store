@@ -72,7 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-# Database Configuration
+# Database Configuration (Neon DB / PostgreSQL Support)
 LOCAL_DB_URL = 'postgresql://postgres:123@127.0.0.1:5432/watches_db'
 
 DATABASES = {
