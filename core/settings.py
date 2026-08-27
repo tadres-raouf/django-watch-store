@@ -16,10 +16,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',  # لازم تكون قبل staticfiles
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-
     'rest_framework',
     'corsheaders',
     'nested_admin',
@@ -29,6 +28,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # ← أضف السطر ده
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -79,7 +79,7 @@ DATABASES = {
     'default': dj_database_url.config(
         default=os.environ.get('DATABASE_URL', LOCAL_DB_URL),
         conn_max_age=600,
-        ssl_require=True  # تفعيل SSL دائماً
+        ssl_require=True
     )
 }
 
@@ -108,21 +108,20 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Cloudinary Configuration (للصور فقط)
+# Cloudinary Configuration
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
     'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
     'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
 }
 
-# ✅ التعديل الأساسي: استخدم `cloudinary_storage` بس لو الـ variables موجودة
+# استخدام cloudinary لو variables موجودة
 if all([os.environ.get('CLOUDINARY_CLOUD_NAME'), 
         os.environ.get('CLOUDINARY_API_KEY'), 
         os.environ.get('CLOUDINARY_API_SECRET')]):
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
     MEDIA_URL = f"https://res.cloudinary.com/{os.environ.get('CLOUDINARY_CLOUD_NAME')}/"
 else:
-    # لو مش موجودة، استخدم الـ local media
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
