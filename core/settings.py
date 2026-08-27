@@ -10,6 +10,9 @@ DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = ['*']
 
+# ✅ استخدم PORT من البيئة
+PORT = os.environ.get('PORT', 8080)
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
