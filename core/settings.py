@@ -10,9 +10,6 @@ DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = ['*']
 
-# ✅ استخدم PORT من البيئة
-PORT = os.environ.get('PORT', 8080)
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,7 +39,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'core.urls'
 
-# CORS
+# CORS Settings
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
@@ -60,7 +57,7 @@ CORS_ALLOW_HEADERS = [
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'BACKEND': 'django.template.backends.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -75,14 +72,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-# Database
+# Database Configuration
 LOCAL_DB_URL = 'postgresql://postgres:123@127.0.0.1:5432/watches_db'
 
 DATABASES = {
     'default': dj_database_url.config(
         default=os.environ.get('DATABASE_URL', LOCAL_DB_URL),
         conn_max_age=600,
-        ssl_require=True
+        ssl_require=False  # تم تحويلها لـ False لتجنب التعارض مع sslmode في DATABASE_URL
     )
 }
 
@@ -106,27 +103,33 @@ TIME_ZONE = 'Africa/Cairo'
 USE_I18N = True
 USE_TZ = False
 
-# Static & Media files
+# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# ✅ إنشاء مجلد staticfiles تلقائياً لو مش موجود
 if not os.path.exists(STATIC_ROOT):
     os.makedirs(STATIC_ROOT)
 
-# Cloudinary Configuration
+# Cloudinary Storage Configuration
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
     'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
     'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
 }
 
-# استخدام cloudinary لو variables موجودة
-if all([os.environ.get('CLOUDINARY_CLOUD_NAME'), 
-        os.environ.get('CLOUDINARY_API_KEY'), 
-        os.environ.get('CLOUDINARY_API_SECRET')]):
-    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# Unified STORAGES Configuration for Django 4.2+
+STORAGES = {
+    "default": {
+        "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage" 
+        if os.environ.get('CLOUDINARY_CLOUD_NAME') 
+        else "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
+if os.environ.get('CLOUDINARY_CLOUD_NAME'):
     MEDIA_URL = f"https://res.cloudinary.com/{os.environ.get('CLOUDINARY_CLOUD_NAME')}/"
 else:
     MEDIA_URL = '/media/'
