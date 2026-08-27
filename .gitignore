@@ -1,0 +1,18 @@
+# Virtual Environment (استبعاد الـ venv)
+venv/
+env/
+ENV/
+.venv/
+
+# Python Cache (استبعاد الكاش)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database & Media Local Files
+*.sqlite3
+media/
+staticfiles/
+
+# Environment Variables
+.env
