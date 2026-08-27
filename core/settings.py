@@ -110,8 +110,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 if not os.path.exists(STATIC_ROOT):
     os.makedirs(STATIC_ROOT)
 
-# WhiteNoise Storage for Cloudinary compat
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+# Staticfiles Storage configuration
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 # Cloudinary Storage Configuration
 CLOUDINARY_STORAGE = {
@@ -127,7 +127,7 @@ STORAGES = {
         else "django.core.files.storage.FileSystemStorage",
     },
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+        "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
     },
 }
 
