@@ -57,7 +57,7 @@ CORS_ALLOW_HEADERS = [
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.DjangoTemplates',
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -79,7 +79,7 @@ DATABASES = {
     'default': dj_database_url.config(
         default=os.environ.get('DATABASE_URL', LOCAL_DB_URL),
         conn_max_age=600,
-        ssl_require=False  # تم تحويلها لـ False لتجنب التعارض مع sslmode في DATABASE_URL
+        ssl_require=False
     )
 }
 
@@ -110,6 +110,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 if not os.path.exists(STATIC_ROOT):
     os.makedirs(STATIC_ROOT)
 
+# WhiteNoise Storage for Cloudinary compat
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
 # Cloudinary Storage Configuration
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
@@ -117,7 +120,6 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
 }
 
-# Unified STORAGES Configuration for Django 4.2+
 STORAGES = {
     "default": {
         "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage" 
@@ -125,7 +127,7 @@ STORAGES = {
         else "django.core.files.storage.FileSystemStorage",
     },
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage", # 👈 تم التعديل هنا (إزالة Manifest)
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
 
