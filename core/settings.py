@@ -43,18 +43,6 @@ ROOT_URLCONF = 'core.urls'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
-CORS_ALLOW_HEADERS = [
-    "accept",
-    "accept-encoding",
-    "authorization",
-    "content-type",
-    "dnt",
-    "origin",
-    "user-agent",
-    "x-csrftoken",
-    "x-requested-with",
-]
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -72,14 +60,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-# Database Configuration (Neon DB / PostgreSQL Support)
+# Database Configuration (Neon DB / PostgreSQL)
 LOCAL_DB_URL = 'postgresql://postgres:123@127.0.0.1:5432/watches_db'
+DATABASE_URL = os.environ.get('DATABASE_URL', LOCAL_DB_URL)
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL', LOCAL_DB_URL),
+    'default': dj_database_url.parse(
+        DATABASE_URL,
         conn_max_age=600,
-        ssl_require=False
     )
 }
 
@@ -110,10 +98,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 if not os.path.exists(STATIC_ROOT):
     os.makedirs(STATIC_ROOT)
 
-# Staticfiles Storage configuration
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
-# Cloudinary Storage Configuration
+# Cloudinary Configuration
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
     'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
