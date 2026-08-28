@@ -43,6 +43,12 @@ ROOT_URLCONF = 'core.urls'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
+# CSRF Settings (تسمح بدخول Admin عبر دومين Railway)
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.up.railway.app',
+    'https://*.vercel.app',
+]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -90,10 +96,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 if not os.path.exists(STATIC_ROOT):
     os.makedirs(STATIC_ROOT)
 
-# توافق مع مكتبة cloudinary_storage ودجانجو 5
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
-# Cloudinary Configuration (للصور فقط)
+# Cloudinary Configuration
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
     'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
