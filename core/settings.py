@@ -11,8 +11,8 @@ DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
-    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,17 +83,17 @@ TIME_ZONE = 'Africa/Cairo'
 USE_I18N = True
 USE_TZ = False
 
-# Static files (CSS, JavaScript, Images)
+# Static files (CSS, JavaScript) via WhiteNoise
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 if not os.path.exists(STATIC_ROOT):
     os.makedirs(STATIC_ROOT)
 
-# تفعيل CompressedStaticFilesStorage لتفادي إيقاف الـ Build بسبب ملفات map المفقودة
+# توافق مع مكتبة cloudinary_storage ودجانجو 5
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
-# Cloudinary Configuration
+# Cloudinary Configuration (للصور فقط)
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
     'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
