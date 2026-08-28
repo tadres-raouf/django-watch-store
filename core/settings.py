@@ -43,7 +43,7 @@ ROOT_URLCONF = 'core.urls'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
-# CSRF Settings (تسمح بدخول Admin عبر دومين Railway)
+# CSRF Settings
 CSRF_TRUSTED_ORIGINS = [
     'https://*.up.railway.app',
     'https://*.vercel.app',
@@ -116,11 +116,9 @@ STORAGES = {
     },
 }
 
-if os.environ.get('CLOUDINARY_CLOUD_NAME'):
-    MEDIA_URL = f"https://res.cloudinary.com/{os.environ.get('CLOUDINARY_CLOUD_NAME')}/"
-else:
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# استخدام مسار نسبى لمنع تكرار دومين Cloudinary مرتين
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
